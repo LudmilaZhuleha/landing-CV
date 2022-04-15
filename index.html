@@ -10,6 +10,116 @@
     <title>Landing-CV</title>
 </head>
 <body>
+<header class="container">
+    <nav>
+        <ul class="header__list">
+            <li class="header__item">About</li>
+            <li class="header__item">Skills</li>
+            <li class="header__item">Experience</li>
+            <li class="header__item">Projects</li>
+            <li class="header__item">Education</li>
+            <li class="header__item">Languages</li>
+            <li class="header__item">Contact me</li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <section class="about">
+        <div class="about__desc">
+            <h1 class="about__desc--name">Sergei Alyoshin</h1>
+            <h2 class="about__desc--work">Front-end developer</h2>
+            <p class="about__desc--text">Hi, I am Sergei Alyoshin and I am Junior Front-end developer. </p>
+            <p class="about__desc--text">I have completed Front-end courses at IT School Intellect Fox and have basic knowledge of HTML, CSS, JavaScript, React and Redux.</p>
+            <button class="button">Download CV</button>
+            <button class="button">Contact me</button>
+        </div>
+        <img src="images/person-foto.png" alt="person-foto" class="about__foto">
+    </section>
+    <section class="skills">
+        <h2 class="skills__title">Skills</h2>
+        <ul class="skills__cards">
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#html"></use>
+                </svg>
+            </li>
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#css"></use>
+                </svg>
+            </li>
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#sass"></use>
+                </svg>
+            </li>
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#js"></use>
+                </svg>
+            </li>
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#git"></use>/svg>
+            </li>
+            <li class="skills__card">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#github"></use>
+                </svg>
+            </li>
+            <li class="skills__card hidden">
+                <svg class="skills__card--icon">
+                    <use xlink:href="images/sprite.svg#react"></use>
+                </svg>
+            </li>
+        </ul>
+        <a class="skills__card--link">
+            <svg class="skills__card--slider">
+                <use xlink:href="images/sprite.svg#arrow-down"></use>
+            </svg>
+        </a>
+    </section>
+    <section class="experience">
+        <div class="experience__title">Work experience</div>
+        <div class="experience__timeline">
+            <div class="timeline__empty"></div>
+            <div class="timeline__period">
+                <div class="timeline__period--date m-left timeline--point">Mar 2020 – till now</div>
+                <div class="timeline__period--desc">
+                    <div class="desc--position">Freelance</div>
+                    <div class="desc--place">Front-end developer</div>
+                    <div class="desc--experience">Created microsites, landing pages for Upwork using CMS, XHTML, HTML5,CSS and JS.</div>
+                </div>
+            </div>
+            <div class="timeline__period">
+                <div class="timeline__period--desc text-align-end">
+                    <div class="desc--position">Softlaunch</div>
+                    <div class="desc--place">Quality Assurance Engineer</div>
+                    <div class="desc--experience">Creation of tests documents. Functional testing, smoke testing,
+                        integration testing, testing user interface, cross-platform testing.</div>
+                </div>
+                <div class="timeline__period--date text-align-end m-right color-grey timeline--point-right">Jan 2018 –
+                    Mar
+                    2020</div>
+            </div>
+            <div class="timeline__empty"></div>
+            <div class="timeline__empty"></div>
+            <div class="timeline__period">
+                <div class="timeline__period--date m-left color-grey timeline--point-grey">Feb 2016 – Jan 2018</div>
+                <div class="timeline__period--desc">
+                    <div class="desc--position">Hotel manager</div>
+                    <div class="desc--place">Hotel “Avrora”</div>
+                    <div class="desc--experience">Organizing and ensuring effective operation of the hotel; controlling the quality of customer service; establishment and timely submission of reports on economic and financial activities of the hotel.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
 
+    </section>
+    <section class="education"></section>
+    <section class="languages"></section>
+</main>
+<footer class="container"></footer>
 </body>
 </html>

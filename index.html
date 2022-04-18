@@ -60,7 +60,8 @@
             </li>
             <li class="skills__card">
                 <svg class="skills__card--icon">
-                    <use xlink:href="images/sprite.svg#git"></use>/svg>
+                    <use xlink:href="images/sprite.svg#git"></use>
+                </svg>
             </li>
             <li class="skills__card">
                 <svg class="skills__card--icon">
@@ -80,7 +81,7 @@
         </a>
     </section>
     <section class="experience">
-        <div class="experience__title">Work experience</div>
+        <h2 class="experience__title">Work experience</h2>
         <div class="experience__timeline">
             <div class="timeline__empty"></div>
             <div class="timeline__period">
@@ -115,11 +116,98 @@
         </div>
     </section>
     <section class="projects">
-
+        <h2 class="projects__title">Projects</h2>
+        <div class="projects__wrapper">
+            <img src="images/triphouse-project.png" alt="project-frontpage" class="project__image">
+            <div class="project__image--desc">
+                <div class="project--desc-name">Triphouse</div>
+                <div class="project--desc-text">Landing-page for online travel agency for lodging reservations.</div>
+                <button class="button">See on Github</button>
+            </div>
+            <a href="#" class="project__slider">Next project
+                 <span>
+                     <img src="images/project-slider-arrow.png" alt="slider-arrow" class="project__slider--arrow">
+                 </span>
+            </a>
+        </div>
+        <div class="projects__slider--bubbles">
+            <div class="slider--bubbles-item bubbles-item-blue"></div>
+            <div class="slider--bubbles-item"></div>
+            <div class="slider--bubbles-item"></div>
+            <div class="slider--bubbles-item"></div>
+        </div>
     </section>
-    <section class="education"></section>
-    <section class="languages"></section>
+    <section class="education">
+        <h2 class="education__title">Education</h2>
+        <div class="experience__timeline education--block">
+            <div class="timeline__empty"></div>
+            <div class="timeline__period">
+                <div class="timeline__period--date m-left timeline--point">Oct 2019 – Mar 2020</div>
+                <div class="timeline__period--desc">
+                    <div class="desc--position">IT School Intellect Fox</div>
+                    <div class="desc--place">Front-end developer course</div>
+                </div>
+            </div>
+            <div class="timeline__period">
+                <div class="timeline__period--desc text-align-end">
+                    <div class="desc--position">QA School</div>
+                    <div class="desc--place">QA basic course</div>
+                </div>
+                <div class="timeline__period--date text-align-end m-right color-grey timeline--point-right">Nov 2017 – Jan 2018</div>
+            </div>
+            <div class="timeline__empty"></div>
+            <div class="timeline__empty"></div>
+            <div class="timeline__period">
+                <div class="timeline__period--date m-left color-grey timeline--point-grey">Sep 2014 – Jul 2018</div>
+                <div class="timeline__period--desc">
+                    <div class="desc--position">Belarusian State University</div>
+                    <div class="desc--place">School of Business</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="languages">
+        <h2 class="languages__title">Languages</h2>
+        <div class="languages__wrapper">
+            <div class="languages__flag">
+                <img class="languages__flag--icon" src="images/rus.png" alt="russia-flag">
+                <p class="languages__icon--desc">Russian</p>
+                <p class="languages__level">Native - C2</p>
+            </div>
+            <div class="languages__flag">
+                <img class="languages__flag--icon" src="images/uk.png" alt="uk-flag">
+                <p class="languages__icon--desc">English</p>
+                <p class="languages__level">Intermediate - B1</p>
+            </div>
+            <div class="languages__flag">
+                <img class="languages__flag--icon" src="images/germany.png" alt="germany-flag">
+                <p class="languages__icon--desc">German</p>
+                <p class="languages__level">Elementary - A2</p>
+            </div>
+        </div>
+    </section>
 </main>
-<footer class="container"></footer>
+<footer class="contacts container"p>
+    <h2 class="contacts__title">Contact me</h2>
+    <div class="contacts__wrapper">
+        <figure class="contacts__foto--wrap">
+            <img src="images/person-foto.png" alt="person-foto" class="contacts__foto">
+        </figure>
+        <div class="contacts__links">
+            <div class="contacts__links--social">
+                <a class="social-item"
+                   href="#"><img src="images/telegram-link.png" alt="telegram" class="social--github"></a>
+                <a class="social-item"
+                   href="#"><img src="images/linkedin-link.png" alt="linkedin" class="social--linkedin"></a>
+                <a class="social-item"
+                   href="#"><img src="images/github-link.png" alt="github" class="social--telegram"></a>
+            </div>
+            <div class="contacts__links--phone">
+                <a href="mailto:sergei.alyoshin@gmail.com" class="contacts--details">sergei.alyoshin@gmail.com</a>
+                <a href="" class="contacts--details">+375 29 702 18 34</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

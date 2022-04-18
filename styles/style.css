@@ -23,6 +23,7 @@ body {
     padding: 0 104px;
     margin: 0 auto;
 }
+/*Styles for header section*/
 .header__list {
     display: flex;
     flex-flow: row wrap;
@@ -58,6 +59,8 @@ body {
     bottom: 10px;
     left: 0;
 }
+
+/*Styles for about section*/
 .about {
     display: flex;
     flex-direction: row;
@@ -92,6 +95,8 @@ body {
     font-weight: 500;
     margin-top: 52px;
 }
+
+/*Styles for skills section*/
 .skills {
     padding: 72px 0;
     position: relative;
@@ -138,7 +143,7 @@ body {
 .hidden{
     display: none;
 }
-/*Styles for work experience*/
+/*Styles for work experience section*/
 .experience {
     padding: 72px 0;
 }
@@ -243,4 +248,152 @@ body {
 }
 .desc--experience {
     color: var(--color-text-grey);
+}
+
+/*Styles for projects*/
+.projects {
+    padding: 72px 0;
+}
+.projects__title {
+    color: var(--color-text-main);
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.projects__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+.project__image--desc {
+    align-self: center;
+    margin-left: 130px;
+}
+.project--desc-name {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.project--desc-text {
+    font-size: 20px;
+    color: var(--color-text-grey);
+}
+.project__slider {
+    flex-basis: 12%;
+    color: var(--color-blue);
+    position: relative;
+}
+.project__slider--arrow {
+    position: absolute;
+    left: 92px;
+    top: 2px;
+}
+.projects__slider--bubbles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slider--bubbles-item {
+    width: 17px;
+    height: 17px;
+    border: 1px solid var(--color-blue);
+    border-radius: 50%;
+    margin-right: 17px;
+}
+.bubbles-item-blue {
+    background-color: var(--color-blue);
+}
+
+/*Styles for education section*/
+.education {
+    padding: 72px 0;
+}
+.education__title {
+    color: var(--color-text-main);
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.education--block {
+    height: 637px;
+}
+
+/* Styles for languages section*/
+.languages {
+    padding: 72px 0;
+}
+.languages__title {
+    color: var(--color-text-main);
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.languages__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.languages__flag {
+    text-align: center;
+}
+.languages__icon--desc {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    color: var(--color-text-main);
+    font-size: 24px;
+    font-weight: 500;
+}
+.languages__level {
+    font-size: 24px;
+    color: var(--color-text-main);
+}
+
+/* Styles for contacts footer*/
+.contacts {
+    padding: 72px 0;
+}
+.contacts__title {
+    color: var(--color-text-main);
+    font-size: 56px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 56px;
+}
+.contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contacts__foto--wrap {
+    width: 412px;
+    height: 412px;
+}
+.contacts__foto {
+    border-radius: 50%;
+    width: 412px;
+    height: 412px;
+}
+.contacts__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 213px;
+}
+.contacts__links--social {
+    margin-bottom: 104px;
+}
+.social-item {
+    margin-right: 17px;
+}
+.contacts--details {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 8px;
+    display: block;
 }

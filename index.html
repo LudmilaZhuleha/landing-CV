@@ -8,9 +8,11 @@
     <meta name="author" content="Luda Zhuleha">
     <link rel="stylesheet" href="styles/main.css">
     <title>Landing-CV</title>
+<!--  @TODO try to add favicon-->
 </head>
 <body>
 <header class="container">
+<!--    @TODO Read about anchor links on pages, it should help to creat a real navigation http://htmlbook.ru/samhtml/yakorya-->
     <nav>
         <ul class="header__list">
             <li class="header__item">About</li>
@@ -74,6 +76,7 @@
                 </svg>
             </li>
         </ul>
+<!--        @TODO it will be better to use button, if the arrow open the list. Don't forget about aria-label -->
         <a class="skills__card--slider">
             <svg class="skills__card--slider-arrow">
                 <use xlink:href="images/sprite.svg#arrow-down"></use>
@@ -87,6 +90,7 @@
             <div class="timeline__period">
                 <div class="timeline__period--date m-left timeline--point-1">Mar 2020 – till now</div>
                 <div class="timeline__period--desc">
+<!--                    @TODO You can use h3, h4, p tags for semantic-->
                     <div class="desc--position">Freelance</div>
                     <div class="desc--place">Front-end developer</div>
                     <div class="desc--experience">Created microsites, landing pages for Upwork using CMS, XHTML, HTML5,CSS and JS.</div>
@@ -120,10 +124,14 @@
         <div class="projects__wrapper">
             <img src="images/triphouse-project.png" alt="project-frontpage" class="project__image">
             <div class="project__image--desc">
+<!--                @TODO Wrong BEM-->
                 <div class="project--desc-name">Triphouse</div>
                 <div class="project--desc-text">Landing-page for online travel agency for lodging reservations.</div>
                 <button class="button">See on Github</button>
             </div>
+<!--            @TODO This block looks like a slider, this "Next project" a kind of the slider arrow,
+            so I recommend putting this into a separated block like for bubbles =)
+            BTW this is a button-->
             <a href="#" class="project__slider">Next project
                  <span>
                      <img src="images/project-slider-arrow.png" alt="slider-arrow" class="project__slider--arrow">
@@ -131,6 +139,7 @@
             </a>
         </div>
         <div class="projects__slider--bubbles">
+<!--            @TODO Bubbles are buttons =) Wrong BEM-->
             <div class="slider--bubbles-item bubbles-item-blue"></div>
             <div class="slider--bubbles-item"></div>
             <div class="slider--bubbles-item"></div>
@@ -159,6 +168,7 @@
             <div class="timeline__empty"></div>
             <div class="timeline__empty"></div>
             <div class="timeline__period">
+<!--                @TODO wrong BEM-->
                 <div class="timeline__period--date m-left color-grey timeline--point-3">Sep 2014 – Jul 2018</div>
                 <div class="timeline__period--desc">
                     <div class="desc--position">Belarusian State University</div>
@@ -169,9 +179,11 @@
     </section>
     <section class="languages">
         <h2 class="languages__title">Languages</h2>
+<!--        @TODO list <ul>☺️-->
         <div class="languages__wrapper">
             <div class="languages__flag">
                 <img class="languages__flag--icon" src="images/rus.png" alt="russia-flag">
+<!--                @TODO p looks like h3, wrong BEM-->
                 <p class="languages__icon--desc">Russian</p>
                 <p class="languages__level">Native - C2</p>
             </div>
@@ -188,7 +200,7 @@
         </div>
     </section>
 </main>
-<footer class="contacts container"p>
+<footer class="contacts container">
     <h2 class="contacts__title">Contact me</h2>
     <div class="contacts__wrapper">
         <figure class="contacts__foto--wrap">
@@ -205,6 +217,7 @@
             </div>
             <div class="contacts__links--phone">
                 <a href="mailto:sergei.alyoshin@gmail.com" class="contacts--details">sergei.alyoshin@gmail.com</a>
+<!--                @TODO how about a special link for a phone number?-->
                 <a href="" class="contacts--details">+375 29 702 18 34</a>
             </div>
         </div>

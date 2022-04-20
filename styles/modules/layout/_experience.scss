@@ -16,6 +16,8 @@
         }
     }
 }
+
+//@TODO DRY and simplify, maybe @extend?😉
 .timeline--point-1 {
     position: relative;
         &:before {

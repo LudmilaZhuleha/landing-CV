@@ -22,6 +22,7 @@
   position: relative;
 }
 
+//@TODO if you add colors (or anythings) into variables, please use only variables, or it doesn't make any sense
 @mixin title {
   color: #120D0E;
   @include fonts (56px, 500);
@@ -33,7 +34,7 @@
   width: $width;
   height: $height;
 }
-
+//@TODO I recommend to add hover and focus for buttons(not only this for all buttons😌), at least cursor: pointer
 @mixin button {
   background-color: #3A4576;
   color: #FFFFFF;

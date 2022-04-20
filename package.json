@@ -1,0 +1,30 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "description": "langing page for resume",
+  "main": "index.html",
+  "dependencies": {
+    "prettier": "^2.6.2",
+    "sass": "^1.50.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass:watch": "sass --watch styles/main.scss styles/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LudmilaZhuleha/landing-CV.git"
+  },
+  "keywords": [
+    "skills",
+    "experience",
+    "education"
+  ],
+  "author": "Luda Zhuleha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LudmilaZhuleha/landing-CV/issues"
+  },
+  "homepage": "https://github.com/LudmilaZhuleha/landing-CV#readme"
+}

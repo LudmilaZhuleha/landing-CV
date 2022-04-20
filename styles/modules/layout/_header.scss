@@ -1,0 +1,31 @@
+.container {
+    @include container;
+}
+
+.header__list {
+    @include flex;
+    list-style: none;
+    padding: 40px 0;
+    position: relative;
+        &:after {
+          content: "";
+          @include size (100%, 1px);
+          @include position (absolute, null, 0, null, null);
+          background-color: $color-text-secondary;
+        }
+}
+.header__item {
+    color: $color-text-secondary;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+        &:hover {
+          font-weight: 500;
+            &:after {
+              content: "";
+              @include size(100%, 1.5px);
+              @include position(absolute, null, 10px, 0, null);
+              background-color: $color-text-main;
+            }
+        }
+}

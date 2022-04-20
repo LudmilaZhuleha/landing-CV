@@ -1,0 +1,91 @@
+.experience {
+    padding: 72px 0;
+
+    &__title {
+        @include title;
+    }
+
+    &__timeline {
+        @include grid;
+
+        &:after {
+            content: "";
+            @include size(1px, 100%);
+            @include position(absolute, null, null, 50%, null);
+            background-color: $color-text-secondary;
+        }
+    }
+}
+.timeline--point-1 {
+    position: relative;
+        &:before {
+            content: "";
+            @include size (12px, 12px);
+            border-radius: 50%;
+            background-color: $color-blue;
+            @include position (absolute, 9px, null, -33px, null);
+        }
+}
+.timeline--point-2 {
+    position: relative;
+        &:before {
+            content: "";
+            @include size (12px, 12px);
+            border-radius: 50%;
+            background-color: $color-text-grey;
+            @include position (absolute, 9px, null, null, -35px);
+            z-index: 99;
+    }
+}
+.timeline--point-3 {
+    position: relative;
+        &:before {
+            content: "";
+            @include size (12px, 12px);
+            border-radius: 50%;
+            background-color: $color-text-grey;
+            @include position (absolute, 9px, null, -33px, null);
+            z-index: 99;
+    }
+}
+
+.timeline__period {
+    @include flex;
+        &--desc {
+            flex-basis: 52.3%;
+            &.text-align-end {
+                text-align: end;
+            }
+                }
+        &--date {
+            flex-basis: 47.7%;
+            font-size: 24px;
+            color: $color-blue;
+            &.m-right {
+                margin-right: 28px;
+                }
+            &.m-left {
+                margin-left: 28px;
+            }
+            &.text-align-end {
+                text-align: end;
+            }
+            &.color-grey {
+                color: $color-text-grey;
+            }
+                }
+}
+.desc--position {
+    color: $color-text-main;
+    @include fonts (24px, 500);
+    margin-bottom: 4px;
+}
+.desc--place {
+    color: $color-text-main;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.desc--experience {
+    color: $color-text-grey;
+}
+

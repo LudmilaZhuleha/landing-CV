@@ -1,0 +1,9 @@
+.education {
+    padding: 72px 0;
+    &__title {
+        @include title;
+    }
+    &__block {
+        height: 637px;
+    }
+}

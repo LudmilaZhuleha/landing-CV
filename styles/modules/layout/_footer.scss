@@ -1,0 +1,39 @@
+.contacts {
+    @include container;
+    &__title {
+        @include title;
+        margin: 72px 0;
+    }
+    &__wrapper {
+        @include flex;
+        align-items: center;
+        margin-bottom: 72px;
+    }
+    &__foto--wrap {
+       @include size (412px, 412px);
+    }
+    &__foto {
+        border-radius: 50%;
+        @include size (412px, 412px);
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 213px;
+    }
+    &__links--social {
+        margin-bottom: 104px;
+        .social-item {
+            margin-right: 17px;
+        }
+    }
+    &__links--phone {
+        .contacts--details {
+            display: block;
+            @include fonts (24px, 400);
+            color: #000000;
+            margin-bottom: 8px;
+        }
+    }
+}

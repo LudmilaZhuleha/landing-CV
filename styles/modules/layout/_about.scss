@@ -1,0 +1,25 @@
+.about {
+    @include flex;
+    margin: 72px 0;
+        &__desc--name {
+            color: $color-text-main;
+            @include fonts (56px, 500);
+            margin-bottom: 40px;
+        };
+        &__desc--work {
+            color: $color-text-grey;
+            @include fonts (56px, 500);
+            margin-bottom: 40px;
+        };
+        &__desc--text {
+            color: $color-text-secondary;
+            @include fonts (22px, 400);
+            margin-bottom: 20px;
+            max-width: 572px;
+            line-height: 26px;
+        }
+}
+.button {
+    @include button;
+    margin-top: 52px;
+}

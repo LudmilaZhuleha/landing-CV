@@ -1,0 +1,18 @@
+@import url(font.css);
+
+@import './modules/abstracts/mixins';
+@import './modules/abstracts/variables';
+
+@import './modules/base/base';
+
+@import './modules/layout/header';
+@import './modules/layout/about';
+@import './modules/layout/skills';
+@import './modules/layout/experience';
+@import './modules/layout/projects';
+@import './modules/layout/education';
+@import './modules/layout/languages';
+@import './modules/layout/footer';
+
+
+

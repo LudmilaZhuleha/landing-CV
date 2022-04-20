@@ -1,0 +1,22 @@
+.languages {
+    padding: 72px 0;
+    &__title {
+        @include title;
+    }
+    &__wrapper {
+        @include flex;
+    }
+    &__flag {
+        text-align: center;
+    }
+    &__icon--desc {
+        @include fonts (24px, 500);
+        margin-top: 24px;
+        margin-bottom: 8px;
+        color: $color-text-main;
+    }
+    &__level {
+        @include fonts (24px, 400);
+        color: $color-text-main;
+    }
+}

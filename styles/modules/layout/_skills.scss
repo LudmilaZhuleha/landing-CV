@@ -1,0 +1,34 @@
+.skills {
+    padding: 72px 0;
+    position: relative;
+        &__title {
+            @include title;
+        }
+        &__cards {
+            @include flex;
+            overflow: hidden;
+            flex-wrap: wrap;
+            list-style: none;
+            height: 213px;
+            margin-bottom: 72px;
+        }
+        &__card {
+            cursor: pointer;
+            @include size (185px, 213px);
+                &.hidden {
+                    display: none;
+                }
+        }
+        &__card--icon {
+            @include size (185px, 213px);
+            margin-bottom: 65px;
+        }
+        &__card--slider {
+            display: block;
+            @include size (32px, 20px);
+            @include position (absolute, null, 68px, 50%, null);
+                &-arrow {
+                   @include size (32px, 20px);
+                }
+        }
+}

@@ -127,7 +127,7 @@ body {
     width: 185px;
     height: 213px;
 }
-.skills__card--link {
+.skills__card--slider {
     width: 32px;
     height: 20px;
     display: block;
@@ -136,7 +136,7 @@ body {
     bottom: 68px;
     left: 50%;
 }
-.skills__card--slider {
+.skills__card--slider-arrow {
     width: 32px;
     height: 20px;
 }
@@ -168,10 +168,10 @@ body {
     background-color: var(--color-text-secondary);
     left: 50%;
 }
-.timeline--point {
+.timeline--point-1, .timeline--point-2, .timeline--point-3 {
     position: relative;
 }
-.timeline--point:before {
+.timeline--point-1:before {
     position: absolute;
     content: "";
     width: 12px;
@@ -181,10 +181,8 @@ body {
     top: 9px;
     left: -33px;
 }
-.timeline--point-grey {
-    position: relative;
-}
-.timeline--point-grey:before {
+
+.timeline--point-2:before {
     position: absolute;
     content: "";
     width: 12px;
@@ -195,10 +193,8 @@ body {
     left: -33px;
     z-index: 99;
 }
-.timeline--point-right {
-    position: relative;
-}
-.timeline--point-right:before {
+
+.timeline--point-3:before {
     position: absolute;
     content: "";
     width: 12px;
@@ -317,7 +313,7 @@ body {
     text-align: center;
     margin-bottom: 56px;
 }
-.education--block {
+.education__block {
     height: 637px;
 }
 

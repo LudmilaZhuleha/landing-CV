@@ -1,13 +1,11 @@
 .experience {
     padding: 72px 0;
-
     &__title {
         @include title;
     }
 
     &__timeline {
         @include grid;
-
         &:after {
             content: "";
             @include size(1px, 100%);
@@ -16,38 +14,35 @@
         }
     }
 }
-
-//@TODO DRY and simplify, maybe @extend?😉
+%timeline-point {
+    content: "";
+    @include size (12px, 12px);
+    border-radius: 50%;
+    z-index: 99;
+}
 .timeline--point-1 {
     position: relative;
         &:before {
-            content: "";
-            @include size (12px, 12px);
-            border-radius: 50%;
+            @extend %timeline-point;
             background-color: $color-blue;
             @include position (absolute, 9px, null, -33px, null);
         }
 }
+
 .timeline--point-2 {
     position: relative;
         &:before {
-            content: "";
-            @include size (12px, 12px);
-            border-radius: 50%;
+            @extend %timeline-point;
             background-color: $color-text-grey;
             @include position (absolute, 9px, null, null, -35px);
-            z-index: 99;
     }
 }
 .timeline--point-3 {
     position: relative;
         &:before {
-            content: "";
-            @include size (12px, 12px);
-            border-radius: 50%;
+            @extend %timeline-point;
             background-color: $color-text-grey;
             @include position (absolute, 9px, null, -33px, null);
-            z-index: 99;
     }
 }
 
@@ -59,6 +54,19 @@
                 text-align: end;
             }
                 }
+        &--position {
+        color: $color-text-main;
+        @include fonts (24px, 500);
+        margin-bottom: 4px;
+            }
+        &--place {
+        color: $color-text-main;
+        font-size: 24px;
+        margin-bottom: 8px;
+            }
+        &--experience {
+        color: $color-text-grey;
+            }
         &--date {
             flex-basis: 47.7%;
             font-size: 24px;
@@ -75,19 +83,7 @@
             &.color-grey {
                 color: $color-text-grey;
             }
-                }
+        }
 }
-.desc--position {
-    color: $color-text-main;
-    @include fonts (24px, 500);
-    margin-bottom: 4px;
-}
-.desc--place {
-    color: $color-text-main;
-    font-size: 24px;
-    margin-bottom: 8px;
-}
-.desc--experience {
-    color: $color-text-grey;
-}
+
 

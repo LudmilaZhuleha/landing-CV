@@ -9,13 +9,13 @@
     &__flag {
         text-align: center;
     }
-    &__icon--desc {
+    &__flag-desc {
         @include fonts (24px, 500);
         margin-top: 24px;
         margin-bottom: 8px;
         color: $color-text-main;
     }
-    &__level {
+    &__flag-level {
         @include fonts (24px, 400);
         color: $color-text-main;
     }

@@ -6,27 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Luda Zhuleha">
+    <link rel="icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/main.css">
     <title>Landing-CV</title>
-<!--  @TODO try to add favicon-->
 </head>
 <body>
 <header class="container">
-<!--    @TODO Read about anchor links on pages, it should help to creat a real navigation http://htmlbook.ru/samhtml/yakorya-->
     <nav>
         <ul class="header__list">
-            <li class="header__item">About</li>
-            <li class="header__item">Skills</li>
-            <li class="header__item">Experience</li>
-            <li class="header__item">Projects</li>
-            <li class="header__item">Education</li>
-            <li class="header__item">Languages</li>
-            <li class="header__item">Contact me</li>
+            <li class="header__item"><a href="#about">About</a></li>
+            <li class="header__item"><a href="#skills">Skills</a></li>
+            <li class="header__item"><a href="#experience">Experience</a></li>
+            <li class="header__item"><a href="#projects">Projects</a></li>
+            <li class="header__item"><a href="#education">Education</a></li>
+            <li class="header__item"><a href="#languages">Languages</a></li>
+            <li class="header__item"><a href="#contacts">Contact me</a></li>
         </ul>
     </nav>
 </header>
 <main class="container">
-    <section class="about">
+    <section id="about" class="about">
         <div class="about__desc">
             <h1 class="about__desc--name">Sergei Alyoshin</h1>
             <h2 class="about__desc--work">Front-end developer</h2>
@@ -37,7 +36,7 @@
         </div>
         <img src="images/person-foto.png" alt="person-foto" class="about__foto">
     </section>
-    <section class="skills">
+    <section id="skills" class="skills">
         <h2 class="skills__title">Skills</h2>
         <ul class="skills__cards">
             <li class="skills__card">
@@ -77,31 +76,33 @@
             </li>
         </ul>
 <!--        @TODO it will be better to use button, if the arrow open the list. Don't forget about aria-label -->
-        <a class="skills__card--slider">
+        <button aria-label="open list" class="skills__card--slider">
             <svg class="skills__card--slider-arrow">
                 <use xlink:href="images/sprite.svg#arrow-down"></use>
             </svg>
-        </a>
+        </button>
     </section>
-    <section class="experience">
+    <section id="experience" class="experience">
         <h2 class="experience__title">Work experience</h2>
         <div class="experience__timeline">
             <div class="timeline__empty"></div>
             <div class="timeline__period">
                 <div class="timeline__period--date m-left timeline--point-1">Mar 2020 – till now</div>
                 <div class="timeline__period--desc">
-<!--                    @TODO You can use h3, h4, p tags for semantic-->
-                    <div class="desc--position">Freelance</div>
-                    <div class="desc--place">Front-end developer</div>
-                    <div class="desc--experience">Created microsites, landing pages for Upwork using CMS, XHTML, HTML5,CSS and JS.</div>
+                    <h3 class="timeline__period--position">Freelance</h3>
+                    <h4 class="timeline__period--place">Front-end developer</h4>
+                    <p class="timeline__period--experience">Created microsites, landing pages for Upwork using CMS,
+                        XHTML,
+                        HTML5,CSS and JS.</p>
                 </div>
             </div>
             <div class="timeline__period">
                 <div class="timeline__period--desc text-align-end">
-                    <div class="desc--position">Softlaunch</div>
-                    <div class="desc--place">Quality Assurance Engineer</div>
-                    <div class="desc--experience">Creation of tests documents. Functional testing, smoke testing,
-                        integration testing, testing user interface, cross-platform testing.</div>
+                    <h3 class="timeline__period--position">Softlaunch</h3>
+                    <h4 class="timeline__period--place">Quality Assurance Engineer</h4>
+                    <p class="timeline__period--experience">Creation of tests documents. Functional testing, smoke
+                        testing,
+                        integration testing, testing user interface, cross-platform testing.</p>
                 </div>
                 <div class="timeline__period--date text-align-end m-right color-grey timeline--point-2">Jan 2018 – Mar 2020
                 </div>
@@ -112,55 +113,55 @@
                 <div class="timeline__period--date m-left color-grey timeline--point-3">Feb 2016 – Jan
                     2018</div>
                 <div class="timeline__period--desc">
-                    <div class="desc--position">Hotel manager</div>
-                    <div class="desc--place">Hotel “Avrora”</div>
-                    <div class="desc--experience">Organizing and ensuring effective operation of the hotel; controlling the quality of customer service; establishment and timely submission of reports on economic and financial activities of the hotel.</div>
+                    <h3 class="timeline__period--position">Hotel manager</h3>
+                    <h4 class="timeline__period--place">Hotel “Avrora”</h4>
+                    <p class="timeline__period--experience">Organizing and ensuring effective operation of the hotel;
+                        controlling
+                        the quality of customer service; establishment and timely submission of reports on economic
+                        and financial activities of the hotel.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section id="projects" class="projects">
         <h2 class="projects__title">Projects</h2>
         <div class="projects__wrapper">
-            <img src="images/triphouse-project.png" alt="project-frontpage" class="project__image">
-            <div class="project__image--desc">
-<!--                @TODO Wrong BEM-->
-                <div class="project--desc-name">Triphouse</div>
-                <div class="project--desc-text">Landing-page for online travel agency for lodging reservations.</div>
-                <button class="button">See on Github</button>
+            <img src="images/triphouse-project.png" alt="project-frontpage" class="projects__image">
+            <div class="projects__desc">
+                <h3 class="projects__desc-name">Triphouse</h3>
+                <p class="projects__desc-text">Landing-page for online travel agency for lodging reservations.</p>
+                <button class="projects__desc-button">See on Github</button>
             </div>
-<!--            @TODO This block looks like a slider, this "Next project" a kind of the slider arrow,
-            so I recommend putting this into a separated block like for bubbles =)
-            BTW this is a button-->
-            <a href="#" class="project__slider">Next project
-                 <span>
+            <div class="projects__next">
+                <button aria-label="next" class="projects__next-slider">Next project
+                    <span>
                      <img src="images/project-slider-arrow.png" alt="slider-arrow" class="project__slider--arrow">
                  </span>
-            </a>
+                </button>
+            </div>
         </div>
-        <div class="projects__slider--bubbles">
-<!--            @TODO Bubbles are buttons =) Wrong BEM-->
-            <div class="slider--bubbles-item bubbles-item-blue"></div>
-            <div class="slider--bubbles-item"></div>
-            <div class="slider--bubbles-item"></div>
-            <div class="slider--bubbles-item"></div>
+        <div class="projects__slider-bubbles">
+            <button aria-label="next"></button>
+            <button aria-label="next"></button>
+            <button aria-label="next"></button>
+            <button aria-label="next"></button>
         </div>
     </section>
-    <section class="education">
+    <section id="education" class="education">
         <h2 class="education__title">Education</h2>
         <div class="experience__timeline education__block">
             <div class="timeline__empty"></div>
             <div class="timeline__period">
                 <div class="timeline__period--date m-left timeline--point-1">Oct 2019 – Mar 2020</div>
                 <div class="timeline__period--desc">
-                    <div class="desc--position">IT School Intellect Fox</div>
-                    <div class="desc--place">Front-end developer course</div>
+                    <div class="timeline__period--position">IT School Intellect Fox</div>
+                    <div class="timeline__period--place">Front-end developer course</div>
                 </div>
             </div>
             <div class="timeline__period">
                 <div class="timeline__period--desc text-align-end">
-                    <div class="desc--position">QA School</div>
-                    <div class="desc--place">QA basic course</div>
+                    <div class="timeline__period--position">QA School</div>
+                    <div class="timeline__period--place">QA basic course</div>
                 </div>
                 <div class="timeline__period--date text-align-end m-right color-grey timeline--point-2">Nov 2017 –
                     Jan 2018</div>
@@ -168,39 +169,36 @@
             <div class="timeline__empty"></div>
             <div class="timeline__empty"></div>
             <div class="timeline__period">
-<!--                @TODO wrong BEM-->
                 <div class="timeline__period--date m-left color-grey timeline--point-3">Sep 2014 – Jul 2018</div>
                 <div class="timeline__period--desc">
-                    <div class="desc--position">Belarusian State University</div>
-                    <div class="desc--place">School of Business</div>
+                    <div class="timeline__period--position">Belarusian State University</div>
+                    <div class="timeline__period--place">School of Business</div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="languages">
+    <section id="languages" class="languages">
         <h2 class="languages__title">Languages</h2>
-<!--        @TODO list <ul>☺️-->
-        <div class="languages__wrapper">
-            <div class="languages__flag">
-                <img class="languages__flag--icon" src="images/rus.png" alt="russia-flag">
-<!--                @TODO p looks like h3, wrong BEM-->
-                <p class="languages__icon--desc">Russian</p>
-                <p class="languages__level">Native - C2</p>
-            </div>
-            <div class="languages__flag">
-                <img class="languages__flag--icon" src="images/uk.png" alt="uk-flag">
-                <p class="languages__icon--desc">English</p>
-                <p class="languages__level">Intermediate - B1</p>
-            </div>
-            <div class="languages__flag">
-                <img class="languages__flag--icon" src="images/germany.png" alt="germany-flag">
-                <p class="languages__icon--desc">German</p>
-                <p class="languages__level">Elementary - A2</p>
-            </div>
-        </div>
+        <ul class="languages__wrapper">
+            <li class="languages__flag">
+                <img class="languages__flag-icon" src="images/rus.png" alt="russia-flag">
+                <h3 class="languages__flag-desc">Russian</h3>
+                <h3 class="languages__flag-level">Native - C2</h3>
+            </li>
+            <li class="languages__flag">
+                <img class="languages__flag-icon" src="images/uk.png" alt="uk-flag">
+                <h3 class="languages__flag-desc">English</h3>
+                <h3 class="languages__flag-level">Intermediate - B1</h3>
+            </li>
+            <li class="languages__flag">
+                <img class="languages__flag-icon" src="images/germany.png" alt="germany-flag">
+                <h3 class="languages__flag-desc">German</h3>
+                <h3 class="languages__flag-level">Elementary - A2</h3>
+            </li>
+        </ul>
     </section>
 </main>
-<footer class="contacts container">
+<footer id="contacts" class="contacts container">
     <h2 class="contacts__title">Contact me</h2>
     <div class="contacts__wrapper">
         <figure class="contacts__foto--wrap">
@@ -217,8 +215,7 @@
             </div>
             <div class="contacts__links--phone">
                 <a href="mailto:sergei.alyoshin@gmail.com" class="contacts--details">sergei.alyoshin@gmail.com</a>
-<!--                @TODO how about a special link for a phone number?-->
-                <a href="" class="contacts--details">+375 29 702 18 34</a>
+                <a href="tel:+375 29 702 18 34" class="contacts--details">+375 29 702 18 34</a>
             </div>
         </div>
     </div>

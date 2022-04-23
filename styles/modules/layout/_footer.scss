@@ -1,8 +1,9 @@
 .contacts {
     @include container;
+    position: relative;
     &__title {
         @include title;
-        margin: 72px 0;
+        margin-top: 56px;
     }
     &__wrapper {
         @include flex;
@@ -34,6 +35,14 @@
             @include fonts (24px, 400);
             color: #000000;
             margin-bottom: 8px;
+        }
+    }
+    .button--up {
+        @include size (50px, 50px);
+        background-color: $color-blue;
+        @include position (absolute, null, 0, 87%, null);
+        > svg {
+            @include size (50px, 50px);
         }
     }
 }

@@ -1,6 +1,12 @@
 .about {
     @include flex;
     margin: 72px 0;
+        &__desc {
+            .button {
+                @include button;
+                margin-top: 52px;
+            }
+        }
         &__desc--name {
             color: $color-text-main;
             @include fonts (56px, 500);
@@ -18,8 +24,4 @@
             max-width: 572px;
             line-height: 26px;
         }
-}
-.button {
-    @include button;
-    margin-top: 52px;
 }

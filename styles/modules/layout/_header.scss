@@ -15,11 +15,12 @@
         }
 }
 .header__item {
-    color: $color-text-secondary;
     font-size: 24px;
     position: relative;
-    cursor: pointer;
-        &:hover {
+        > a {
+            color: $color-text-secondary;
+        }
+        &:hover, &:focus {
           font-weight: 500;
             &:after {
               content: "";

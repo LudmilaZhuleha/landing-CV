@@ -25,6 +25,7 @@
         }
         &__card--slider {
             display: block;
+            cursor: pointer;
             @include size (32px, 20px);
             @include position (absolute, null, 68px, 50%, null);
                 &-arrow {

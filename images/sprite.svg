@@ -1,4 +1,7 @@
 <svg>
+    <symbol id="up" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 10 16" fill="white">
+        <path fill-rule="evenodd" d="M5 3L0 9h3v4h4V9h3L5 3z"/>
+    </symbol>
     <symbol id="html" viewBox="0 0 185 213" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_1_752)">
             <path d="M63.0241 91.9682L56.5767 19.6524L127.423 19.6524L120.969 91.9569L91.9565 100L63.0241 91.9682Z" fill="#E44D26"/>

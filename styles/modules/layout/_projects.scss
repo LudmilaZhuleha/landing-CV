@@ -6,39 +6,47 @@
     &__wrapper {
         @include flex;
         margin-bottom: 56px;
+        .projects__desc {
+            align-self: center;
+            margin-left: 130px;
+        .projects__desc-name {
+            @include fonts (24px, 500);
+            margin-bottom: 8px;
+            }
+        .projects__desc-text {
+            @include fonts (20px, 400);
+            color: $color-text-grey;
+            margin-bottom: 86px;
+            }
+        .projects__desc-button {
+            @include button;
+            }
+        }
+        .projects__next {
+            flex-basis: 12%;
+            &__next-slider {
+                align-content: flex-start;
+                color: $color-blue;
+                cursor: pointer;
+            }
+        }
     }
-    &__slider--bubbles {
+    &__slider-bubbles {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        > div {
+        > button {
             @include size (17px, 17px);
             border: 1px solid $color-blue;
             border-radius: 50%;
             margin-right: 17px;
-            &.bubbles-item-blue {
+            cursor: pointer;
+            &:hover, &:focus {
                 background-color: $color-blue;
             }
         }
     }
 }
-.project__image--desc {
-    align-self: center;
-    margin-left: 130px;
-}
-.project--desc-name {
-    @include fonts (24px, 500);
-    margin-bottom: 8px;
-}
-.project--desc-text {
-    @include fonts (20px, 400);
-    color: $color-text-grey;
-}
-.project__slider {
-    flex-basis: 12%;
-    color: $color-blue;
-    position: relative;
-    &--arrow {
-        @include position (absolute, 2px, null, 92px, null);
-    }
-}
+
+
+

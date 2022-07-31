@@ -30,6 +30,8 @@
         }
     }
     &__links--phone {
+        display: flex;
+        flex-direction: column;
         .contacts--details {
             display: block;
             @include fonts (24px, 400);

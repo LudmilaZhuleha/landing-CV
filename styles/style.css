@@ -386,6 +386,11 @@ body {
 .social-item {
     margin-right: 17px;
 }
+.contacts__links--phone {
+    display: flex;
+    flex-direction: column;
+}
+
 .contacts--details {
     font-size: 24px;
     text-decoration: none;
